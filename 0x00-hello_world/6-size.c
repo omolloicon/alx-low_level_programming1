@@ -2,7 +2,7 @@
 /**
 * main - program to display vafrious types on the computer compiled on
 *
-* Return: 0 (output)
+* Return (output)
 */
 int main(void)
 {
