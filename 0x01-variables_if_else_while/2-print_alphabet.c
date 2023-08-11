@@ -1,19 +1,18 @@
 #include <stdio.h>
 /**
- * main - c code that prints a to z.
- * the alphabets are 26
- * Return: 0 (good)
+ * main - a c program that prints alphabets a to z
+ * all alphabets will be displayed
+ * Return: 0 (wow)
  */
 int main(void)
 {
-	char atoz[26] = "abcdefghijklmnopqrstuvwxyz";
+	char az[26] = "abcdefghijklmnopqrstuvwxyz";
 	int k;
 
 	for (k = 0; k < 26; k++)
 	{
-		putchar(atoz[k]);
+		putchar(az[k]);
 	}
 	putchar('\n');
-
 	return (0);
-
+}
