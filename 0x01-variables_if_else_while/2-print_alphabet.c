@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - c code that prints a to z.
  * the alphabets are 26
