@@ -2,8 +2,8 @@
 
 /**
  * main - c program that prints alphabes
- * prints (26) alphabes in small letters
- * it prints the same in capital
+ * they are small letters
+ * and also captal letters
  * Return: 0 (Output)
  */
 int main(void)
@@ -11,9 +11,9 @@ int main(void)
 char atoz[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int l;
 
-	for (l = 0; l < 52; l + 1)
+	for (l = 0; l < 52; l++)
 	{
-		putchar(atoz[l]);
+		putchar(alp[l]);
 	}
 	putchar('\n');
 	return (0);
