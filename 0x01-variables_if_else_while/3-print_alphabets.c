@@ -13,7 +13,7 @@ char atoz[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	for (l = 0; l < 52; l++)
 	{
-		putchar(alp[l]);
+		putchar(atoz[l]);
 	}
 	putchar('\n');
 	return (0);
