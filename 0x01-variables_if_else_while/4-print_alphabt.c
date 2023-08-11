@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * main - c program that prints alphabets excluding q and e * prints individual characters
+ * main - prints alphabets excluding q and e
+ * prints individual characters
  * Return: 0
  */
 int main(void)
