@@ -17,7 +17,7 @@ int main(void)
 			break;
 
 		if ((a3 % 2) == 0)
-			a4 += a4;
+			a4 += a3;
 
 		a1 = a2;
 		a2 = a3;
