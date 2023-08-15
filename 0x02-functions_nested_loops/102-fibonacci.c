@@ -23,7 +23,7 @@ else
 {
 printf("%ld\n", f);
 }
-next = f + h;
+all = f + h;
 f = h;
 h = all;
 }
