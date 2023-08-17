@@ -21,7 +21,7 @@ int main(void)
 	}
 	for (k = 3; k <= sqrt(j); k = k + 2)
 	{
-		while (j % i == 0)
+		while (j % k == 0)
 		{
 			high = k;
 			j = j / k;
