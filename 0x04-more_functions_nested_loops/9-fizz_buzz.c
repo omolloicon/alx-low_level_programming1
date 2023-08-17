@@ -2,37 +2,39 @@
 #include <stdio.h>
 
 /**
- * main - display number from 0 to 100
+ * main - display numbers from 1 to 100
  *
- * Return: 0 (done)
+ *
+ * Return: 0 (Done)
  */
 int main(void)
 {
-	int y;
+	int f;
 
-	for (y = 1; y <= 100; y++)
+	for (f = 1; f <= 100; f++)
 	{
-		if (y % 3 == 0 && y % 5 != 0)
+		if (f % 3 == 0 && f % 5 != 0)
 		{
 			printf(" Fizz");
 		}
-		else if (y % 5 == 0 && y % 3 != 0)
+		else if (f % 5 == 0 && f % 3 != 0)
 		{
 			printf(" Buzz");
 		}
-		else if (y % 3 == 0 && y % 5 == 0)
+		else if (f % 3 == 0 && f % 5 == 0)
 		{
 			printf(" FizzBuzz");
 		}
-		else if (y == 1)
+		else if (f == 1)
 		{
-			printf("%d", y);
+			printf("%d", f);
 		}
 		else
 		{
-			printf("%d", y);
+			printf(" %d", f);
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
