@@ -8,31 +8,32 @@
  */
 int main(void)
 {
-	int i;
+	int y;
 
-	for (i = 1; i <= 100; i++)
+	for (y = 1; y <= 100; y++)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
+		if (y % 3 == 0 && y % 5 != 0)
 		{
 			printf(" Fizz");
 		}
-		else if (i % 5 == 0 && i % 3 != 0)
+		else if (y % 5 == 0 && y % 3 != 0)
 		{
 			printf(" Buzz");
 		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (y % 3 == 0 && y % 5 == 0)
 		{
 			printf(" FizzBuzz");
 		}
-		else if (i == 1)
+		else if (y == 1)
 		{
-			printf("%d", i);
+			printf("%d", y);
 		}
 		else
 		{
-			printf(" %d", i);
+			printf(" %d", y);
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
