@@ -2,7 +2,7 @@
 /**
  * _isupper - check for upper case
  *@c: interger dsplay
- * Return: 0 (done)
+ * Return: 1 uppercase, else 0 (done)
  *
  */
 
