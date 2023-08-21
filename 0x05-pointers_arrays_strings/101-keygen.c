@@ -8,9 +8,9 @@
 int main(void)
 {
 	int m = 0, n = 0;
-	time_t time;
+	time_t r;
 
-	srand((unsigned int) time(&time));
+	srand((unsigned int) time(&r));
 	while (n < 2772)
 	{
 		m = rand() % 128;
