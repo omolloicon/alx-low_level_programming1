@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlens - string length
+ * _strlen - string length
  * @s: first character
  *
  * Return: done
