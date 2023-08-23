@@ -1,15 +1,4 @@
 #include "main.h"
-
- /**
- *_strncat-cating string to one
- *@dest: str 1
- *@src: str 2
- *@n: number of chars to cut
- *Return: done.
- */
-char *_strncat(char *dest, char *src, int n)
-#include "main.h"
-
 /**
  *_strncat - concatinate 2 strings.
  *@dest: first string.
