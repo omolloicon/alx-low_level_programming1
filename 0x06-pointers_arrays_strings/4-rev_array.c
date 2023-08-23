@@ -16,7 +16,7 @@ void reverse_array(int *a, int n);
 	{
 		store = a[m];
 		a[m] = a[k];
-		a[k] = store
-			k--;
+		a[k] = store;
+		k--;
 	}
 }
