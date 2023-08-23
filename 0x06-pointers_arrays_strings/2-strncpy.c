@@ -22,13 +22,12 @@ char *_strncpy(char *dest, char *src, int n)
 			}
 			r++;
 		}
-	}
 		else
-	{
-		dest[r] = src[s];
-		r++;
-		s++;
+		{
+			dest[r] = src[s];
+			r++;
+			s++;
+		}
 	}
-
 	return (dest);
 }
