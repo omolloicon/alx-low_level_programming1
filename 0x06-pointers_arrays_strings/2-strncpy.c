@@ -8,7 +8,7 @@
  *Return: done
  */
 
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
 {
 	int r = 0, s = 0;
 
@@ -23,7 +23,7 @@ char *_strncpy(char *dest, char *src, int n);
 			r++;
 		}
 	}
-	else
+		else
 	{
 		dest[r] = src[s];
 		r++;
