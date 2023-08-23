@@ -8,19 +8,31 @@
  *Return: done.
  */
 char *_strncat(char *dest, char *src, int n)
-{
-	int t = 0, l = 0;
+#include "main.h"
 
-	while (dest[t] != '\0')
+/**
+ *_strncat - concatinate 2 strings.
+ *@dest: first string.
+ *@src: second string.
+ *@n: the number of bytes to use from src.
+ *Return: string.
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int j = 0, m = 0;
+
+	while (dest[j] != '\0')
+		j++;
+	while (src[m] != '\0' && n > m)
 	{
-		t++;
+		dest[j] = src[m];
+		m++;
+		j++;
 	}
-	while (l < n && src[l] != '\0')
+	if (n > 0)
 	{
-		dest[t] = src[l];
-		t++;
-		l++;
+		dest[j] = '\0';
 	}
-	dest[t] = '\0';
 	return (dest);
 }
