@@ -1,4 +1,4 @@
-#iclude "main.h"
+#include "main.h"
 
  /**
  *_strncat-cating string to one
@@ -7,7 +7,7 @@
  *@n: number of chars to cut
  *Return: done.
  */
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 	int t = 0, l = 0;
 
@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n);
 	}
 	while (l < n && src[l] != '\0')
 	{
-		dest[i] = src[l];
+		dest[t] = src[l];
 		t++;
 		l++;
 	}
