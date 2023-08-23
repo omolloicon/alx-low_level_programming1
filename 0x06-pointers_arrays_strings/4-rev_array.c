@@ -7,7 +7,7 @@
  *@n: this is the array length
  */
 
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int m, k, store;
 
