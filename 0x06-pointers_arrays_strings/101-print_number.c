@@ -3,6 +3,7 @@
 /**
  *print_number - use of _putchar
  *@n: is the integer under process
+ *Return: done
  */
 
 void print_number(int n)
