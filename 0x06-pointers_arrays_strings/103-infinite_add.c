@@ -39,9 +39,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		return (0);
 	for (k--, l = 0; k > l; k--, l++)
 	{
-		add = r[k];
+		sum = r[k];
 		r[k] = r[l];
-		r[l] = add;
+		r[l] = sum;
 	}
 	return (r);
 }
