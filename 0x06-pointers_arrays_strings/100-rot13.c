@@ -1,28 +1,31 @@
 #include "main.h"
 /**
  * rot13 - function str encoder
- * t: string to process.
+ * @t: string to process.
  * Return: done encoding
  */
 
 char *rot13(char *t)
 {
-	int start = 0, k;
-	char alph[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	int m, n;
+	char letter[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char swich[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (*(t + start) != '\0')
+	m = 0;
+
+	while (t[m] != '\0')
 	{
-		for (k = 0; k < 52; k++)
+		n = 0;
+		while (letter[n] != '\0')
 		{
-			if (*(t + start) == alph[k])
+			if (t[m] == letter[n])
 			{
-				*(t + start) = rot13[k];
+				t[m] = swich[n];
 				break;
 			}
+			n++;
 		}
-		start++;
+		m++;
 	}
-
 	return (t);
 }
