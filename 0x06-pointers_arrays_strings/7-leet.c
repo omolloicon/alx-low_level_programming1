@@ -16,7 +16,7 @@ char *leet(char *t)
 	{
 		for (n = 0; n < 5; n++)
 		{
-			if (t[m] == alpha[m] || alpha[n] - 32)
+			if (t[m] == alpha[n] || c[m] == alpha[n] - 32)
 			{
 				t[m] = swich[n]
 			}
