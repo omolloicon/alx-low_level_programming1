@@ -1,29 +1,26 @@
 #include "main.h"
 
 /**
- *leet - to show the string encoding..
- *@s: strind being peocessed.
+ *leet - to show the string encoding.
+ *@t: strind being peocessed.
  *Return: done.
  */
 
-char *leet(char *s)
+char *leet(char *t)
 {
-	int k = 0, j = 0;
+	int m, n;
+	char alpha[5] = {'a', 'e', 'o', 't', 'l'};
+	char swich[5] = {'4', '3', '0', '7', '1'};
 
-	char array_leet[] = {'4', '3', '1', '0', '7'};
-
-	char array_up[] = {'A', 'E', 'L', 'O', 'T'};
-
-	char array_low[] = {'a', 'e', 'l', 'o', 't'};
-
-	while (s[k] != '\0')
+	for (m = 0; t[m] != '\0'; m++)
 	{
-		for (l = 0; l < 5; l++)
+		for (n = 0; n < 5; n++)
 		{
-			if (s[k] == array_low[l] || s[k] == array_up[l])
-				s[k] = array_leet[l];
+			if (t[m] == alpha[m] || t[n] - 32)
+			{
+				t[m] = swich[n]
+			}
 		}
-		k++;
 	}
-	return (s);
+	return (t);
 }
