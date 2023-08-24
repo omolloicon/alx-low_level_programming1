@@ -18,7 +18,7 @@ char *leet(char *t)
 		{
 			if (t[m] == alpha[n] || t[m] == alpha[n] - 32)
 			{
-				t[m] = swich[n]
+				t[m] = swich[n];
 			}
 		}
 	}
