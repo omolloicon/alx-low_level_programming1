@@ -16,8 +16,8 @@ int _length(char *s)
 /**
  * _verify - string comparizon
  * @s: string under process
- * @len: value one
- * @count: value n,to show its the biggest
+ * @size: value one
+ * @tally: value n,to show its the biggest
  *
  * Return: done
  */
