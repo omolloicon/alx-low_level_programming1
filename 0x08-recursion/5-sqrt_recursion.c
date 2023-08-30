@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * _sqrt - checks for perfect square root
- * @k: squareroot number
- * @val: the nember being checked
+ * _sqrt - square root
+ * @k: value to enter
+ * @val: procedure value
  *
- * Return: the value of the square root
- * -1 if not perfect squareroot
+ * Return: squareroot , -1
  */
 int _sqrt(int k, int val)
 {
@@ -18,10 +17,10 @@ int _sqrt(int k, int val)
 }
 
 /**
- * _sqrt_recursion - returns natural square
- * @n: the integer to check
+ * _sqrt_recursion - returns naturalto num sqrt
+ * @n: value to enter
  *
- * Return: integer value
+ * Return: num square root
  */
 int _sqrt_recursion(int n)
 {
