@@ -4,7 +4,7 @@
  * main - dispays arguments it recieves
  * @argc: count
  * @argv: value
- * return: 0 (done)
+ * Return: 0 (done)
  */
 
 int main(int argc, char *argv[])
