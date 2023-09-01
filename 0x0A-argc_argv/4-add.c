@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	add = 0;
 	if (argc > 1)
 	{
-		for (m = 1; < argc; m++)
+		for (m = 1; m < argc; m++)
 		{
 			for (n = 0; argv[m][n]; n++)
 			{
@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
-			add += atoi(argv[m])
+			add += atoi(argv[m]);
 		}
-		print("%d\n", add);
+		printf("%d\n", add);
 	}
 	else
 	{
-		print("0\n");
+		printf("0\n");
 	}
 	return (0);
-
+}
