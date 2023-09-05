@@ -2,16 +2,15 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - returns a pointer to a 2 dimensional array of integers.
- * @width: width of the array.
- * @height: height of the array.
+ * alloc_grid - returns second array.
+ * @width: along.
+ * @height: across.
  *
- * Return: pointer of an array of integers
+ * Return: pointer to array
  */
 int **alloc_grid(int width, int height)
 {
-	int **search;
-	int m, n;
+	int **search, m, n;
 
 	if (width < 1 || height < 1)
 		return (NULL);
