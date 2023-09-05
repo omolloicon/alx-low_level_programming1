@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 		g[z] = s1[z];
 
 	max = n;
-	for (n = 0; n <= max; k++, n++)
+	for (n = 0; n <= max; z++, n++)
 		g[z] = s2[n];
 
 	return (g);
