@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *malloc_checked - malloc mem allocation.
- *@b: memory
- *Return: the space allocated
- **/
+ * malloc_checked - malloc mem allocation.
+ * @b: memory
+ * Return: the space allocated
+ *
+ */
 
 void *malloc_checked(unsigned int b)
 {
