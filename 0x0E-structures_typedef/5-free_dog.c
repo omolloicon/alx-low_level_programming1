@@ -4,6 +4,7 @@
 /**
  * free_dog - frees dogs memory.
  * @d: dog's struct
+ * Return: null
  */
 
 void free_dog(dog_t *d)
