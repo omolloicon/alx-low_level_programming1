@@ -13,13 +13,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int tally = 0;
 
-	if (size <= NULL)
+	if (size <= 0)
 		return (-1);
 	if (array && cmp)
 	{
 		while (tally < size)
 		{
-			if (cmp(array[tally]) != NULL)
+			if (cmp(array[tally]) != 0)
 				return (tally);
 			tally++;
 		}
