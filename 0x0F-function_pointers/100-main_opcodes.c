@@ -1,50 +1,43 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * opcodes - print the opcodes of this program
- * @c: address of the main function
- * @t: number of bytes to print
- * Return: null
-**/
-
-void opcodes(char *c, int t)
-{
-	int k;
-
-	for (k = 0; k < n; k++)
-	{
-		printf("%.2hhx", c[k]);
-		if (k < t - 1)
-			printf(" ");
-	}
-	printf("\n");
-
-}
-
-/**
- * main - prints the opcodes of its own main function
- * @argc: number of arguments passed to the function
- * @argv: array of pointers to arguments
+ * main - main function
  *
+ * @argc: argument number
+ * @argv: number of pointer strings
  * Return: done 0
+ *
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int f;
+	int tally, value;
+	void *f;
+	char *f_link;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-	f = atoi(argv[1]);
-	if (f < 0)
+
+	value = atoi(argv[1]);
+	if (value < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	print_opcodes((char *)&main, f);
+
+	f = main;
+	f_link = f;
+	for (tally = 0; tally < value; tally++)
+	{
+		printf("%02hhx", f_link[tally]);
+		if (tally < value - 1)
+			printf(" ");
+		else
+			printf("\n");
+	}
 	return (0);
 }
