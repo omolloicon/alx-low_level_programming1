@@ -5,16 +5,17 @@
 
 /**
  * struct list_s - individual
- * @store: our string
- * @cap: capacity
- * @proc: what follows
+ * @str: our string
+ * @len: capacity
+ * @next: what follows
+ * Description: what folows
  */
 
 typedef struct list_s
 {
-        char *store;
-        unsigned int cap;
-        struct list_s *proc;
+        char *str;
+        unsigned int len;
+        struct list_s *next;
 } list_t;
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
