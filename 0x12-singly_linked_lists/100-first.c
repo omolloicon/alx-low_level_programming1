@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "lists.h"
-void show(void)_attribute_((constructor));
+void show(void)__attribute__((constructor));
 
 /**
  * show - displays sentence then main char
