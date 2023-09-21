@@ -12,6 +12,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *start, *stop;
 	unsigned int cap = 0;
+
 	if (str == 0)
 		return (0);
 	start = malloc(sizeof(list_t));
