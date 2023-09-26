@@ -1,26 +1,25 @@
 #include "lists.h"
 
 /**
- * reverse_listint - reverse the string
- * @head: adress to pointer
- * Return: sucess when done
+ * reverse_listint - string
+ * @head: pointer to pointer
+ *
+ * Return: succes when done
  */
 
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *fter, *before;
+	listint_t *before = 0, *next;
 
-	if (head == 0 || *head == 0)
-		return (0);
-	before = 0;
-
-	while ((*head)->next != 0)
+	while (*head)
 	{
-		fter = (*head)->next;
+		next = (*head)->next;
 		(*head)->next = before;
 		before = *head;
-		*head = fter;
+		if (next)
+			(*head) = next;
+		else
+			break;
 	}
-	(*head)->next = before;
 	return (*head);
 }
