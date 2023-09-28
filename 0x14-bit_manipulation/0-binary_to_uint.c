@@ -12,18 +12,18 @@ unsigned int binary_to_uint(const char *b)
 	int siz, binnary;
 
 	if (!b)
-		return (NULL);
+		return (0);
 
 	store = 0;
 
-	for (siz = NULL; b[siz] != '\0'; siz++)
+	for (siz = 0; b[siz] != '\0'; siz++)
 		;
 
 	for (siz--, binnary = 1; siz >= 0; siz--, binnary *= 2)
 	{
 		if (b[siz] != '0' && b[siz] != '1')
 		{
-			return (NULL);
+			return (0);
 		}
 
 		if (b[siz] & 1)
